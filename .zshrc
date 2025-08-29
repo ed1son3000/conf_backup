@@ -1,5 +1,11 @@
 #sudo apt install zsh
 #sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+#sudo apt install neofetch
+#cd .oh-my-zsh/plugins
+#fzf-tab
+#zsh-256color
+#切换默认 Shell 为 Zsh
+#chsh -s /bin/zsh
 
 ZSH=~/.oh-my-zsh/
 ZSH_THEME="dst"
