@@ -17,7 +17,7 @@
 ZSH=~/.oh-my-zsh/
 ZSH_THEME="dst"
 
-#  plugins
+# plugins
 plugins=(
     git
     sudo
@@ -35,15 +35,15 @@ source ~/.oh-my-zsh/plugins/fzf-tab/fzf-tab.zsh
 export FZF_DEFAULT_OPTS="--color=fg:-1,bg:-1,hl:3,fg+:0,bg+:48,hl+:1,info:6,prompt:3,pointer:5"
 export FZF_PREVIEW_OPTS="--border --color=bg+:48,bg:-1,hl:3,fg:7"
 
-#  fzf
+# fzf
 [ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh 
 
 
-#  neofetch
+# neofetch
 neofetch
 
 
-#  alias
+# alias
 alias fzf="fzf --preview 'bat --color=always {}'"
 alias top="btop"
 
