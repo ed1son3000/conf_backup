@@ -1,11 +1,18 @@
-#sudo apt install zsh
-#sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-#sudo apt install neofetch
-#cd .oh-my-zsh/plugins
-#fzf-tab
-#zsh-256color
-#切换默认 Shell 为 Zsh
-#chsh -s /bin/zsh
+# sudo apt install zsh
+# 克隆oh my zsh
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# sudo apt install neofetch
+# sudo apt install fzf
+# cd .oh-my-zsh/plugins
+# zsh-autosuggestions: 提供命令自动补全。
+# 安装命令: git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+# zsh-syntax-highlighting: 提供命令语法高亮。
+# 安装命令: git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+# fzf-tab: 增强 Zsh 的 Tab 补全功能。
+# 安装命令: git clone https://github.com/Aloxaf/fzf-tab ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-tab
+# zsh-256color
+# 切换默认 Shell 为 Zsh
+# chsh -s /bin/zsh
 
 ZSH=~/.oh-my-zsh/
 ZSH_THEME="dst"
@@ -16,15 +23,9 @@ plugins=(
     sudo
     zsh-256color
     zsh-autosuggestions
-    zsh-syntax-highlighting)
-
-#zsh-autosuggestions: 提供命令自动补全。
-#安装命令: git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-#zsh-syntax-highlighting: 提供命令语法高亮。
-#安装命令: git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-#fzf-tab: 增强 Zsh 的 Tab 补全功能。
-#安装命令: git clone https://github.com/Aloxaf/fzf-tab ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-tab
-
+    zsh-syntax-highlighting
+    fzf-tab
+)
 
 source $ZSH/oh-my-zsh.sh  #  path to zsh
 # source /usr/share/fzf/completion.zsh  #  fzf plugins
@@ -36,6 +37,7 @@ export FZF_PREVIEW_OPTS="--border --color=bg+:48,bg:-1,hl:3,fg:7"
 
 #  fzf
 [ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh 
+
 
 #  neofetch
 neofetch
